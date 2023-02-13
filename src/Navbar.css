@@ -1,0 +1,31 @@
+.nav{
+    position:fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+
+    /* animation */
+    transition-timing-function: ease-in;
+    transition: all .5s;
+}
+
+.nav__logo{
+    height: 34px;
+    width: auto;
+    z-index: 1;
+    margin: 13px;
+    cursor: pointer;
+}
+
+.nav__avatar{
+    height: 30px;
+    width: auto;
+    float: right;
+    margin: 15px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.nav__bar{
+    background-color: black;
+}

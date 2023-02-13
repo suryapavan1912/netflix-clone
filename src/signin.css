@@ -1,0 +1,63 @@
+.signin{
+    position: absolute;
+    top: 25%;
+    width: 100%;
+}
+
+.signin_in{
+    background-color: rgba(0, 0, 0, .85);
+    padding: 50px;
+    width: 235px;
+    margin: auto;
+}
+
+.signin_in > h1{
+    color: white;
+    margin: 0px 0px 15px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.signin_in > input{
+    padding: 10px 20px;
+    font-size: 13px;
+    border: none;
+    width: calc(100% - 40px);
+    margin: 5px 0px;
+    border-radius: 5px;
+}
+
+
+.signin_in > button{
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #E50914;
+    color: white;
+    border: none;
+    font-size: 13px;
+    margin: 20px 0px 0px ;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.signin_in > p{
+    color: white;
+    font-size: 13.5px;
+    margin: 20px 0px 0px;
+    color: gray;
+    font-weight: 600;
+}
+
+.signin_in > p > span{
+    cursor: pointer;
+    color: white;
+    font-weight: 700;
+}
+
+.signin_in > p > span:hover{
+    text-decoration: underline;
+}
+
+.signin_in > input:focus{
+    outline: none;
+}

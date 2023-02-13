@@ -1,0 +1,32 @@
+.arrays{
+    padding: 0px 10px;
+}
+
+.arrays__heading{
+    color: white;
+    margin-left: 5px;
+    margin-bottom: 0%;
+    font-weight: 200;
+    margin-top: .5%;
+}
+
+.arrays__box{
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+.arrays__box::-webkit-scrollbar{
+    display: none;
+}
+
+.arrays__poster{
+    max-height: 250px;
+    padding: 5px;
+    object-fit: contain;
+    transition: .3s;
+}
+
+.arrays__poster:hover{
+    transform: scale(1.08);
+}

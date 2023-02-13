@@ -1,0 +1,88 @@
+.loginscreen{
+    background-image: url('https://raw.githubusercontent.com/thatanjan/netflix-clone-yt/youtube/media/banner.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.loginscreen__logo{
+    position: relative;
+    height: 34px;
+    width: auto;
+    margin: 13px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.loginscreen > button {
+    position: relative;
+    padding: 10px 20px;
+    float: right;
+    margin: 10px;
+    cursor: pointer;
+    background-color: #E50914;
+    color: white;
+    border: 0px;
+    z-index: 1;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.loginscreen_fade{
+    background-image : linear-gradient(rgba(0,0,0,.8) 0%,rgba(0,0,0,.4) 60%,rgba(0,0,0,.8) 100%);
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+.loginscreen_flex{
+    color: white;
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    top: 30%;
+    width: 100%;  
+}
+
+.loginscreen_flexx{
+        padding: 0px 30px;
+}
+
+.loginscreen_flexx > h1{
+    font-size: 40px;
+    margin: 20px 0px;
+}
+.loginscreen_flexx > h3 {
+    font-weight: 600;
+    font-size: 23px;
+    margin: 20px 0px;
+}
+
+.loginscreen_flexx > h5 {
+    font-weight: 300;
+    font-size: 20px;
+    margin: 20px 0px;
+
+}
+
+.loginscreen_flexx > button{
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #E50914;
+    color: white;
+    border: none;
+    font-size: 13px;
+
+}
+
+.loginscreen_flexx >input{
+    padding: 10px 20px;
+    font-size: 13px;
+    border: none;
+    width: 220px;
+}
+.loginscreen_flexx > input:focus{
+    outline: none;
+}
