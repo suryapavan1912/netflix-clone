@@ -25,10 +25,12 @@ useEffect(() => {
                 alt=''
             />
         </NavLink>
+        <NavLink to='/'>
         <img className='nav__logo'
             src='https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png' 
             alt=''
         />
+        </NavLink>
     </div>
   )
 }

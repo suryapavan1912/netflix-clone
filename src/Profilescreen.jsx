@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux'
 import { selectuser } from './features/userSlice'
 import { auth } from './Firebase'
 import './Profilescreen.css'
-import {useNavigate} from 'react-router-dom'
+import {NavLink, useNavigate} from 'react-router-dom'
 
 function Profilescreen() {
 
@@ -12,10 +12,12 @@ const navigate = useNavigate()
 let user = useSelector(selectuser)
   return (
     <div className='profilescreen'>
+        <NavLink to='/'>
         <img className='loginscreen__logo'
             src='https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png' 
             alt=''
         />
+        </NavLink>
         <img className='profilescreen__avatar'
             src='https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png' 
             alt=''
