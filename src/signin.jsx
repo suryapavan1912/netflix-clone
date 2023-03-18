@@ -1,23 +1,25 @@
 import React, { useRef } from 'react'
-import { auth } from './Firebase';
 import './signin.css'
+import { getAuth, signInWithEmailAndPassword , createUserWithEmailAndPassword  } from "firebase/auth";
+
 function Signin() {
 
+const auth = getAuth();
 const refuser = useRef(null);
 const refpassword = useRef(null);
 
 function signIn(){
-  auth.signInWithEmailAndPassword(refuser.current.value,refpassword.current.value)
-  .catch((err) => {
+  signInWithEmailAndPassword(auth, refuser.current.value, refpassword.current.value)
+    .catch((err) => {
       alert(err.message)
-  });
+    });
 }
 
 function regester(){
-  auth.createUserWithEmailAndPassword(refuser.current.value,refpassword.current.value)
-  .catch((err) => {
+  createUserWithEmailAndPassword(auth, refuser.current.value, refpassword.current.value)
+    .catch((err) => {
       alert(err.message)
-  });
+    });
 }
 
 

@@ -1,6 +1,5 @@
-import firebase from 'firebase/compat/app';
-import 'firebase/compat/auth';
-import 'firebase/compat/firestore';
+import { initializeApp } from "firebase/app";
+import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
   apiKey: "AIzaSyCXkZezt69VfOYacdYQS6hfmfSmNoz-fTQ",
@@ -8,12 +7,11 @@ const firebaseConfig = {
   projectId: "netflix-f7c7c",
   storageBucket: "netflix-f7c7c.appspot.com",
   messagingSenderId: "328930609356",
-  appId: "1:328930609356:web:d8d6a99b8ea24f00d39a69"
+  appId: "1:328930609356:web:8c4901ef8b5751c5d39a69"
 };
 
-const firebaseApp = firebase.initializeApp(firebaseConfig);
-const db = firebaseApp.firestore();
-const auth = firebase.auth();
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
 
-export default db;
 export { auth };
+
